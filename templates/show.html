@@ -1,10 +1,6 @@
 {% extends 'base.html' %}
-
 {% block content %}
-
 <h1> Information about {{student.first_name}}</h1>
-
 <a href="{{url_fot('edit', id=student.id )}}">Edit this student!</a>
-
 <h2>Delete student</h2>
 {% endblock %}

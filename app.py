@@ -34,7 +34,5 @@ def edit(id):
     found_student = find_student(id)
     return render_template('edit.html' , student = found_student)
 
-
-
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
