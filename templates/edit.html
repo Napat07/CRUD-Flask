@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% block content %}
     <h1>Edit students !</h1>
     <form method = "POST" action="{{url_for('show', id = student.id)}}?_method=PATCH" >

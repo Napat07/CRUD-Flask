@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1> Information about {{student.first_name}}</h1>
-<a href="{{url_fot('edit', id=student.id )}}">Edit this student!</a>
+<a href="{{url_for('edit', id=student.id )}}">Edit this student!</a>
+
 <h2>Delete student</h2>
+<form method="POST" action="{{url_for('show', id=student.id)}}?_method=DELETE">
+    <input type="submit" value="delete">
+</form>
 {% endblock %}
